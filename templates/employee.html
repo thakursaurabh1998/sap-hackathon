@@ -1,0 +1,39 @@
+<html>
+<head>
+<link href="{{url_for('static',filename='css/employeecss.css')}}" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="a">
+<center>
+<h1>Employee Data Required</h1>
+</center>
+</div>
+<div class="t">
+<form method="post" action="{{url_for('saveempdata')}}">
+<ol class="list">
+<li>Location<br><input type="text" name="location"></li><br>
+<li>Work Experienced<br><input type="number" name="experience"></li><br>
+<li>Job Status<br><input type="text" name="status"></li><br><input type="hidden" name="email" value="{{email}}">
+<li>Job Type<br><input type="text" name="jobtype"></li><br>
+<li>Package Requirement<br><input type="text" name="package"></li>
+<li>Highest Degree Completed<br></li>
+<input type="text" name="requirements"></li><br>
+<!-- <ol class="list">
+<li><input type="checkbox" value="10th Pass" >10th Pass</li>
+<li><input type="checkbox" value="12th Pass" >12th Pass</li>
+<li><input type="checkbox" value="12th Pass" >12th Pass</li>
+<li><option value="B.Tech" >B.Tech</li>
+<li><input type="checkbox" value="BBA" >BBA</li>
+<li><input type="checkbox" value="B.Com" >B.Com</li>
+<li><input type="checkbox" value="M.Com" >M.Com</li>
+<li><input type="checkbox" value="MBA" >MBA</li>
+<li><input type="checkbox" value="M.Tech" >M.Tech</li><br>
+</ol> -->
+<div class="tt">
+<li><input type="submit" value="Submit"></li>
+</div>
+<ol>
+</form>
+</div>
+</body>
+</html>

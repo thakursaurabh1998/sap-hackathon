@@ -1,0 +1,29 @@
+body
+{
+background-image:url('../img/d.jpeg');
+background-size:100%;
+}
+.list
+{
+list-style-type:none;
+}
+div.t
+{
+margin: 2% 40%;
+background-color:black;
+border:1px solid white;
+opacity: 0.7;
+color:white;
+}
+div.tt
+{
+margin-left:25%;
+}
+div.a
+{
+margin: 0% 35%;
+background-color:white;
+border:1px solid white;
+opacity: 0.5;
+color:black;
+}

@@ -1,0 +1,7 @@
+<form method="post" action="{{url_for('itemAdd')}}">
+<input class="width" type="text" name="category" placeholder="Enter title">
+<input type="submit" class="btn btn-primary submitBtn" value="Add">
+</form>
+{% for i in items %}
+<h1>{{i.name}}</h1>
+{% endfor %}

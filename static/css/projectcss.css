@@ -1,0 +1,37 @@
+body{
+	/*background-image:url('c.jpeg');*/
+	background-size: 100%;
+
+}
+.video{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -999;
+}
+.heading{
+	margin-top:230px;
+	text-align: center;
+	font-family: vardhana;
+	font-size: 100px;
+    color:white;
+}
+.click
+{
+	margin: auto;
+	display: block;
+	font-size: 30px;
+	text-decoration: none; 
+     color: white;  
+     background: transparent; 
+     border-radius: 80px; 
+     padding-bottom: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 10px;
+     outline: none;
+}

@@ -1,0 +1,25 @@
+<html>
+<head>
+<link href="{{url_for('static',filename='css/matchcss.css')}}" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="a">
+<center>
+<h1>Matched Recruiters</h1>
+</center>
+</div>
+{%for i in matching%}
+<div class="t">
+<ol class="list">
+<li>{{i.RecruitJob.companyname}}</li>
+<li>{{i.RecruitJob.location}}</li>
+<li>{{i.RecruitJob.requirements}}</li>
+<li>{{i.RecruitJob.packagerequired}}</li>
+<li>{{i.User.firstname}} {{i.User.lastname}}</li>
+<li>{{i.User.usertype}}</li>
+<li>{{i.User.email}}</li>
+</ol>
+</div>
+{%endfor%}
+</body>
+</html>

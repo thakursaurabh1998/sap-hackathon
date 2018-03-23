@@ -1,0 +1,24 @@
+<html>
+<head>
+<link href="{{url_for('static',filename='css/matchrcss.css')}}" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="a">
+<center>
+<h1>Matched Employees</h1>
+</center>
+</div>
+{% for i in matching %}
+<div class="t">
+<ol class="list">
+<li>{{i.User.firstname}} {{i.User.lastname}}</li>
+<li>{{i.User.usertype}}</li>
+<li>{{i.User.gender}}</li>
+<li>{{i.EmployeeJob.experience}}</li>
+<li>{{i.EmployeeJob.packagerequired}}</li>
+<br>
+</ol>
+</div>
+{%endfor%}
+</body>
+</html>
